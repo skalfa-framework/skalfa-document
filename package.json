@@ -1,7 +1,7 @@
 {
   "name": "@skalfa/skalfa-document",
   "version": "1.0.0",
-  "description": "Document export and viewer components for the Skalfa Next.js frontend framework.",
+  "description": "Excel import/export and PDF rendering document viewer extension for Skalfa Next.js applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
@@ -36,6 +36,6 @@
     "next": "16.1.1",
     "react": "^19.2.1",
     "react-dom": "^19.2.1",
-    "typescript": "^5.0.0"
+    "typescript": "^6.0.3"
   }
 }
