@@ -1,0 +1,31 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "lib": ["DOM", "DOM.Iterable", "ES2022"],
+    "declaration": true,
+    "outDir": "./dist",
+    "rootDir": "./src",
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "jsx": "react-jsx",
+    "typeRoots": [
+      "../skalfa-app-core/node_modules/@types"
+    ],
+    "paths": {
+      "@skalfa/skalfa-app-core": ["../skalfa-app-core/dist/index.d.ts"],
+      "exceljs": ["../skalfa-app-core/node_modules/exceljs"],
+      "pdf-lib": ["../skalfa-app-core/node_modules/pdf-lib"],
+      "pdfjs-dist": ["../skalfa-app-core/node_modules/pdfjs-dist"],
+      "pdfjs-dist/*": ["../skalfa-app-core/node_modules/pdfjs-dist/*"],
+      "next": ["../skalfa-app-core/node_modules/next"],
+      "next/*": ["../skalfa-app-core/node_modules/next/*"],
+      "@fortawesome/react-fontawesome": ["../skalfa-app-core/node_modules/@fortawesome/react-fontawesome"],
+      "@fortawesome/free-solid-svg-icons": ["../skalfa-app-core/node_modules/@fortawesome/free-solid-svg-icons"]
+    }
+  },
+  "include": ["src/**/*"]
+}
