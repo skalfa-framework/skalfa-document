@@ -1,6 +1,6 @@
 {
   "name": "@skalfa/skalfa-document",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Excel import/export and PDF rendering document viewer extension for Skalfa Next.js applications.",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
