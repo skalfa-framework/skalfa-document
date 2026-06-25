@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://raw.githubusercontent.com/skalfa-framework/skalfa/main/logo/logo-skalfa-full.png" alt="Skalfa Logo" width="300" />
+  <img src="https://skalfa.sejedigital.com/images/logo-skalfa.png" alt="Skalfa Logo" width="300" />
 </p>
 
 # @skalfa/skalfa-document
