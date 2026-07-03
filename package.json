@@ -20,15 +20,20 @@
   "dependencies": {
     "exceljs": "^4.4.0",
     "pdf-lib": "^1.17.1",
-    "pdfjs-dist": "^4.4.168"
+    "pdfjs-dist": "^5.4.394"
   },
   "peerDependencies": {
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@skalfa/skalfa-app-core": "^1.0.0",
     "next": "^15.0.0 || ^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.7.2",
+    "@fortawesome/free-solid-svg-icons": "^6.7.2",
+    "@fortawesome/react-fontawesome": "^0.2.2",
     "@skalfa/skalfa-app-core": "^1.0.0",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
