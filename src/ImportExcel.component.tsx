@@ -1,8 +1,9 @@
-"use client";
+"use client"
+import { Icon, type IconName } from "@skalfa/skalfa-icon";
+;
 
 import { useMemo, useState } from "react";
 import ExcelJS from "exceljs";
-import { faEdit } from "@fortawesome/free-solid-svg-icons";
 import { api, FetchControlType, registry } from "@skalfa/skalfa-app-core";
 
 // Dynamically resolve UI components and context from registry to avoid compile-time dependencies
@@ -144,7 +145,7 @@ export function ImportExcel({ columnControl, onSubmit, submitControl, fetchContr
             <p className="font-semibold">{getColumnLabel(col.source) || <p className="text-light-foreground">-- PILIH KOLOM --</p>}</p>
 
             <IconButtonComponent
-              icon={faEdit}
+              icon="solid/edit"
               size="xs"
               paint="warning"
               variant="outline"

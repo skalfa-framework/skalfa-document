@@ -1,8 +1,9 @@
-"use client";
+"use client"
+import { Icon, type IconName } from "@skalfa/skalfa-icon";
+;
 
 import ExcelJS from "exceljs";
 import { useEffect, useMemo, useState } from "react";
-import { faArrowLeft, faArrowRight, faEdit, faPlus, faTimes } from "@fortawesome/free-solid-svg-icons";
 import { api, FetchControlType, useTable, registry } from "@skalfa/skalfa-app-core";
 
 // Dynamically resolve UI components and context from registry to avoid compile-time dependencies
@@ -174,7 +175,7 @@ export function ExportExcel({ fetchControl, columnControl, filename }: ExportExc
           <div className="flex gap-1">
             {iCol > 0 && (
               <IconButtonComponent
-                icon={faArrowLeft}
+                icon="solid/arrow-left"
                 size="xs"
                 variant="outline"
                 className="!text-foreground"
@@ -184,7 +185,7 @@ export function ExportExcel({ fetchControl, columnControl, filename }: ExportExc
 
             {iCol < (columns.length - 1) && (
               <IconButtonComponent
-                icon={faArrowRight}
+                icon="solid/arrow-right"
                 size="xs"
                 variant="outline"
                 className="!text-foreground"
@@ -193,7 +194,7 @@ export function ExportExcel({ fetchControl, columnControl, filename }: ExportExc
             )}
 
             <IconButtonComponent
-              icon={faEdit}
+              icon="solid/edit"
               size="xs"
               paint="warning"
               variant="outline"
@@ -202,7 +203,7 @@ export function ExportExcel({ fetchControl, columnControl, filename }: ExportExc
             />
 
             <IconButtonComponent
-              icon={faTimes}
+              icon="solid/times"
               size="xs"
               paint="danger"
               variant="outline"
@@ -219,7 +220,7 @@ export function ExportExcel({ fetchControl, columnControl, filename }: ExportExc
     controlRow[ADD_COLUMN_KEY] = (
       <div className="flex justify-center">
         <ButtonComponent
-          icon={faPlus}
+          icon="solid/plus"
           label="Tambah Kolom"
           size="xs"
           variant="outline"

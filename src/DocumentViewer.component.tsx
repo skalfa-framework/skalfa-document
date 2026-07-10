@@ -1,9 +1,9 @@
 "use client"
+import { Icon, type IconName } from "@skalfa/skalfa-icon";
+
 
 import { useEffect, useMemo, useRef, useState } from "react";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faFilePdf, faFileImage, faFileWord, faFileExcel, faFile } from "@fortawesome/free-solid-svg-icons";
 import { cn } from "@skalfa/skalfa-app-core";
 
 
@@ -22,17 +22,17 @@ export const DocumentViewerIcon = (ext: string) => {
     case "jpeg":
     case "png":
     case "webp":
-      return faFileImage;
+      return "solid/file-image";
     case "pdf":
-      return faFilePdf;
+      return "solid/file-pdf";
     case "doc":
     case "docx":
-      return faFileWord;
+      return "solid/file-word";
     case "xls":
     case "xlsx":
-      return faFileExcel;
+      return "solid/file-excel";
     default:
-      return faFile;
+      return "solid/file";
   }
 };
 
@@ -154,7 +154,7 @@ export function DocumentViewerComponent({ file, width, height, mode = "full" }: 
 
       {!isImage && !isPdf && (
         <div className={cn("w-full h-full flex flex-col items-center justify-center opacity-50 gap-4")}>
-          <FontAwesomeIcon icon={DocumentViewerIcon(extension || "")} className={mode !== "thumb" ? "text-3xl" : "text-lg"} />
+          <Icon icon={DocumentViewerIcon(extension || "")} className={mode !== "thumb" ? "text-3xl" : "text-lg"} />
           {mode !== "thumb" && file instanceof File && (<p className="text-center text-sm">{file.name}</p>)}
         </div>
       )}

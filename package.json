@@ -1,6 +1,6 @@
 {
   "name": "@skalfa/skalfa-document",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "Excel import/export and PDF rendering document viewer for Skalfa Framework.",
   "keywords": ["skalfa", "skalfa-app", "skalfa-document", "next-template", "next-framework"],
   "license": "MIT",
@@ -8,7 +8,7 @@
   "types": "dist/index.d.ts",
   "files": ["dist"],
   "scripts": {
-    "build": "tsc -p tsconfig.json"
+    "build": "tsc -p tsconfig.build.json"
   },
   "dependencies": {
     "exceljs": "^4.4.0",
@@ -17,17 +17,13 @@
   },
   "peerDependencies": {
     "@skalfa/skalfa-app-core": "*",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
     "next": "^15.0.0 || ^16.0.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0"
   },
   "devDependencies": {
     "@skalfa/skalfa-app-core": "*",
-    "@fortawesome/fontawesome-svg-core": "^6.7.2",
-    "@fortawesome/free-solid-svg-icons": "^6.7.2",
-    "@fortawesome/react-fontawesome": "^0.2.2",
+    "@skalfa/skalfa-icon": "file:../skalfa-icon",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",

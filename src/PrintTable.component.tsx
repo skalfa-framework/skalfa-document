@@ -1,8 +1,9 @@
-"use client";
+"use client"
+import { Icon, type IconName } from "@skalfa/skalfa-icon";
+;
 
 import { useEffect, useMemo, useState } from "react";
 import { FetchControlType, useTable, registry } from "@skalfa/skalfa-app-core";
-import { faArrowLeft, faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import { RenderPDF, RenderPDFPreview, PageSchema, NodeSchema } from "./RenderPDF.component.js";
 
 // Dynamically resolve UI components from registry to avoid compile-time dependencies
@@ -172,7 +173,7 @@ export function PrintTable({ fetchControl, columnControl, title }: { fetchContro
                 <div className="flex gap-1" key={key}>
                   {key > 0 && (
                     <IconButtonComponent
-                      icon={faArrowLeft}
+                      icon="solid/arrow-left"
                       size="xs"
                       variant="outline"
                       className="!text-foreground"
@@ -182,7 +183,7 @@ export function PrintTable({ fetchControl, columnControl, title }: { fetchContro
 
                   {key < (columns.length - 1) && (
                     <IconButtonComponent
-                      icon={faArrowRight}
+                      icon="solid/arrow-right"
                       size="xs"
                       variant="outline"
                       className="!text-foreground"
