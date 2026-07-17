@@ -23,7 +23,7 @@
   },
   "devDependencies": {
     "@skalfa/skalfa-app-core": "*",
-    "@skalfa/skalfa-icon": "file:../skalfa-icon",
+    "@skalfa/skalfa-icon": "*",
     "@types/node": "^20.0.0",
     "@types/react": "^19.0.0",
     "@types/react-dom": "^19.0.0",
